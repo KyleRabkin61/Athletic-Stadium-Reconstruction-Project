@@ -15,3 +15,15 @@ window.addEventListener('scroll', () => {
         nav.classList.remove('navbar-scrolled');
     }
 });
+
+// button on scroll function that does not cut off div
+
+function scrollToSection(id) {
+    const element = document.getElementById(id);
+    const offset = 125; // Adjust this value based on navbar height
+    const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({
+        top: elementPosition - offset,
+        behavior: "smooth"
+    });
+}

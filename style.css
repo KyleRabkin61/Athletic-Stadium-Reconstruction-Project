@@ -18,6 +18,11 @@ Fonts:
   transition: all 0.25s;
 }
 
+.navbar .container-fluid {
+  padding-right: calc(var(--bs-gutter-x)* .5) !important;
+  padding-left: calc(var(--bs-gutter-x)* .5) !important;
+}
+
 .navbar-scrolled {
   background-color: #154987;
   border-bottom: #F4E04D 5px solid;
@@ -142,7 +147,7 @@ Fonts:
 .header {
   background: #154987;
   width: clamp(350px, 60vw, 575px);
-  height: clamp(200px, 40vh, 600px);
+  height: clamp(200px, 40svh, 600px);
   border: #F4E04D 5px solid;
   border-radius: 10px;
   box-shadow: 0px 1px 4px 3px rgba(0, 0, 0, 0.70);
@@ -159,8 +164,9 @@ Fonts:
   margin-top: 50px;
   border-radius: 10px;
   font-size: 30px;
-  padding: 20px 50px;
-  width: fit-content;
+  padding: 20px 100px;
+  width: 100px;
+  height: clamp(70px, 10svh, 100px);
   box-shadow: 0px 1px 4px 3px rgba(0, 0, 0, 0.70);
   font-family: "Instrument Sans", sans-serif;
   color: black;
@@ -187,6 +193,25 @@ Fonts:
   width: 100%;
 }
 
+.the-project-title {
+  font-size: 50px;
+  font-weight: 500;
+  color: #154987;
+  position: relative;
+  margin: 50px 0 0 0;
+}
+
+.the-project-title::after {
+  position: absolute;
+  content: ' ';
+  width: 10%;
+  height: 4px;
+  left: 50%;
+  bottom: -10px;
+  background-image: linear-gradient(to right, #2076DB, #154987);
+  transform: translate(-50%);
+}
+
 .the-project-image {
   height: 400px;
   width: 400px;
@@ -194,7 +219,8 @@ Fonts:
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 100px 0;
+  margin: 50px 0;
+  box-shadow: 0px 1px 14px 7px rgba(0, 0, 0, 0.90);
 }
 
 .the-project-info {
@@ -204,4 +230,5 @@ Fonts:
   color: white;
   width: 400px;
   height: 400px;
+  box-shadow: 0px 1px 14px 7px rgba(0, 0, 0, 0.90);
 }
