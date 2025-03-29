@@ -41,6 +41,10 @@ Fonts:
   color: #F4E04D;
 }
 
+.nav-link:focus {
+  color: white !important;
+}
+
 /*hamburger menu css*/
 
 .navbar-toggler {
