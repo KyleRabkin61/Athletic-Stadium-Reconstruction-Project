@@ -152,11 +152,13 @@ Fonts:
   border-radius: 10px;
   box-shadow: 0px 1px 4px 3px rgba(0, 0, 0, 0.70);
 }
+
 .header-text {
   color: white;
   font-size: clamp(35px, 5vw, 55px);
   padding: clamp(50px, 3vw, 100px);
   font-family: "Josefin Sans", sans-serif;
+  margin: auto 0;
 }
 
 .explore {
@@ -177,20 +179,19 @@ Fonts:
   box-shadow: 0px 1px 14px 7px rgba(0, 0, 0, 0.90);
 }
 
-/* the project css */
-
 .container-fluid {
   padding: 0;
 }
 
-.the-project {
-  background: #F5F5F5;
-  height: 1300px;
-  margin-bottom: 200px;
-}
-
 .row {
   width: 100%;
+}
+
+/* the project css */
+
+.the-project {
+  background: #F5F5F5;
+  height: 1200px;
 }
 
 .the-project-title {
@@ -198,14 +199,17 @@ Fonts:
   font-weight: 500;
   color: #154987;
   position: relative;
+  top: 75px;
+  margin-bottom: 50px;
 }
 
 .the-project-title::after {
   position: absolute;
   content: ' ';
-  width: 10%;
+  width: clamp(75px, 6vw, 150px);
   height: 4px;
   left: 50%;
+  top: 75px;
   bottom: -10px;
   background-image: linear-gradient(to right, #2076DB, #154987);
   transform: translate(-50%);
@@ -219,6 +223,7 @@ Fonts:
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0px 1px 14px 7px rgba(0, 0, 0, 0.90);
+  position: relative;
 }
 
 .the-project-info {
@@ -229,21 +234,136 @@ Fonts:
   border-radius: 10px;
   color: white;
   box-shadow: 0px 1px 14px 7px rgba(0, 0, 0, 0.90);
+  position: relative;
+}
+
+/* the funding css */
+
+.the-funding {
+  background: #113F75;
+  height: 1200px;
+}
+
+.the-funding-title {
+  font-size: 50px;
+  font-weight: 500;
+  color: white;
+  position: relative;
+  top: 75px;
+  margin-bottom: 50px;
+}
+
+.the-funding-title::after {
+  position: absolute;
+  content: ' ';
+  width: clamp(75px, 6vw, 150px);
+  height: 4px;
+  left: 50%;
+  top: 75px;
+  bottom: -10px;
+  background-image: linear-gradient(to right, #FFF39A, #F4E04D);
+  transform: translate(-50%);
+}
+
+.the-funding-image {
+  width: 80%;
+  height: 400px;
+  background-image: url(Athletic-Stadium-Images/before.JPG);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 1px 14px 7px rgba(0, 0, 0, 0.90);
+  position: relative;
+}
+
+.the-funding-info {
+  width: 80%;
+  height: 400px;
+  background: white;
+  border: #F4E04D 5px solid;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 0px 1px 14px 7px rgba(0, 0, 0, 0.90);
+  position: relative;
 }
 
 @media screen and (min-width:1200px) {
   .the-project {
-    height: 101svh;
+    height: 900px;
   }
 
   .the-project-title {
     position: relative;
+    top: 0;
+    margin-bottom: 0;
   }
 
   .the-project-image {
-    width:35vw;
+    width: 35vw;
+    bottom: 100px;
   }
+
   .the-project-info {
-    width:35vw;
+    width: 35vw;
+    bottom: 100px;
   }
+
+  .the-funding {
+    height: 900px;
+  }
+
+  .the-funding-title {
+    position: relative;
+    top: 0;
+    margin-bottom: 0;
+  }
+
+  .the-funding-image {
+    width: 35vw;
+    bottom: 100px;
+  }
+
+  .the-funding-info {
+    width: 35vw;
+    bottom: 100px;
+  }
+}
+
+
+@media screen and (max-height:600px) {
+  .img-header {
+    height: 600px;
+    animation: fade-out linear forwards;
+    animation-timeline: view();
+    animation-range: 500px;
+  }
+  .header-text {
+    font-size: clamp(30px, 5vh, 40px);
+  }
+}
+
+  /* scrollbar */
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #dddcdc;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #F4E04D;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a7982b;
 }

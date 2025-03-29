@@ -17,8 +17,10 @@
 
     <!-- Google fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -41,19 +43,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link text-lg-center" aria-current="page" href="#">Project</a>
+                        <button class="nav-link text-lg-center" aria-current="page" onclick="scrollToSection('project');">Project</button>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-lg-center" aria-current="page" href="#">Funding</a>
+                        <a class="nav-link text-lg-center" aria-current="page" onclick="scrollToSection('funding');">Funding</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-lg-center" aria-current="page" href="#">History</a>
+                        <a class="nav-link text-lg-center" aria-current="page" onclick="scrollToSection('history');">History</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-lg-center" aria-current="page" href="#">Meaning</a>
+                        <a class="nav-link text-lg-center" aria-current="page" onclick="scrollToSection('meaning');">Meaning</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-lg-center" aria-current="page" href="#">Result</a>
+                        <a class="nav-link text-lg-center" aria-current="page" onclick="scrollToSection('result');">Result</a>
                     </li>
                 </ul>
             </div>
@@ -67,20 +69,42 @@
             <div class="header d-flex align-items-center flex-column">
                 <h1 class="header-text text-center">The Marlboro Athletic Stadium Reconstruction Process</h1>
             </div>
-            <button class="explore btn d-flex align-items-center justify-content-center" onclick="scrollToSection('project');">Explore</button>
+            <button class="explore btn d-flex align-items-center justify-content-center"
+                onclick="scrollToSection('project');">Explore</button>
         </div>
     </div>
 
     <div class="container-fluid">
 
-    <!-- The Project -->
+        <!-- The Project -->
         <div class="the-project d-flex justify-content-center" id="project">
-            <div class="row d-flex justify-content-evenly align-items-center">
+            <div class="row d-flex justify-content-evenly align-items-lg-center">
                 <h1 class="the-project-title text-center">The Project</h1>
                 <div class="col-12 col-lg-6 the-project-image d-flex justify-content-center align-items-center">
                 </div>
                 <div class="col-12 col-lg-6 the-project-info d-flex justify-content-center align-items-center">
-                    <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, provident, saepe labore at, voluptas inventore fugiat ducimus libero reiciendis eveniet a dolores quisquam aspernatur expedita. Repellendus, omnis id sunt dolore commodi eaque cum ad hic, mollitia praesentium ipsa aut obcaecati temporibus explicabo non tenetur. Nesciunt culpa sed omnis hic, totam tempore neque, delectus quasi molestias ipsam animi? Vel unde, ut enim similique repellat quod dicta rem ea incidunt, voluptatum laborum assumenda officiis non aspernatur corrupti.</p>
+                    <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, provident,
+                        saepe labore at, voluptas inventore fugiat ducimus libero reiciendis eveniet a dolores quisquam
+                        aspernatur expedita. Repellendus, omnis id sunt dolore commodi eaque cum ad hic, mollitia
+                        praesentium ipsa aut obcaecati temporibus explicabo non tenetur. Nesciunt culpa sed omnis hic,
+                        totam tempore neque, delectus quasi molestias ipsam animi? Vel unde, ut enim similique repellat
+                        quod dicta rem ea incidunt, voluptatum laborum assumenda officiis non aspernatur corrupti.</p>
+                </div>
+            </div>
+        </div>
+        <!-- The Funding -->
+        <div class="the-funding d-flex justify-content-center" id="funding">
+            <div class="row d-flex justify-content-evenly align-items-lg-center">
+                <h1 class="the-funding-title text-center">The Funding</h1>
+                <div class="col-12 col-lg-6 the-funding-image d-flex justify-content-center align-items-center">
+                </div>
+                <div class="col-12 col-lg-6 the-funding-info d-flex justify-content-center align-items-center">
+                    <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, provident,
+                        saepe labore at, voluptas inventore fugiat ducimus libero reiciendis eveniet a dolores quisquam
+                        aspernatur expedita. Repellendus, omnis id sunt dolore commodi eaque cum ad hic, mollitia
+                        praesentium ipsa aut obcaecati temporibus explicabo non tenetur. Nesciunt culpa sed omnis hic,
+                        totam tempore neque, delectus quasi molestias ipsam animi? Vel unde, ut enim similique repellat
+                        quod dicta rem ea incidunt, voluptatum laborum assumenda officiis non aspernatur corrupti.</p>
                 </div>
             </div>
         </div>

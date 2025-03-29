@@ -1,10 +1,9 @@
-// Select the header image
 let imgHeader = document.querySelector(".img-header");
 
 // Get the computed height and convert it to a number
 let height = parseInt(getComputedStyle(imgHeader).height, 10);
 
-// Select the navbar
+
 let nav = document.querySelector('.navbar');
 
 // Add scroll event listener
@@ -16,7 +15,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// button on scroll function that does not cut off div
+// Button on scroll function that does not cut off div
 
 function scrollToSection(id) {
     const element = document.getElementById(id);
@@ -27,3 +26,20 @@ function scrollToSection(id) {
         behavior: "smooth"
     });
 }
+
+// Navbar collapses on click
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll(".nav-link");
+    const navbarCollapse = document.querySelector(".navbar-collapse");
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", function () {
+            if (navbarCollapse.classList.contains("show")) {
+                new bootstrap.Collapse(navbarCollapse, {
+                    toggle: true
+                });
+            }
+        });
+    });
+});
