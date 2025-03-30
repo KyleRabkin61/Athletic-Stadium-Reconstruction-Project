@@ -18,9 +18,14 @@ Fonts:
   transition: all 0.25s;
 }
 
+.navbar-brand img{
+  height: clamp(70px, 11vw, 90px);
+}
+
 .navbar .container-fluid {
   padding-right: calc(var(--bs-gutter-x)* .5) !important;
   padding-left: calc(var(--bs-gutter-x)* .5) !important;
+
 }
 
 .navbar-scrolled {
@@ -30,7 +35,7 @@ Fonts:
 
 .nav-link {
   color: white;
-  font-size: clamp(30px, 1vw, 40px);
+  font-size: clamp(20px, 2vw, 40px);
   font-weight: 1000;
   letter-spacing: 0.2px;
   margin: 0 20px;
@@ -343,6 +348,18 @@ Fonts:
   }
   .header-text {
     font-size: clamp(30px, 5vh, 40px);
+  }
+}
+
+@media screen and (max-height:1000px) {
+  .img-header {
+    height: 700px;
+    animation: fade-out linear forwards;
+    animation-timeline: view();
+    animation-range: 900px;
+  }
+  .header-text {
+    font-size: clamp(25px, 4.7vh, 35px);
   }
 }
 
