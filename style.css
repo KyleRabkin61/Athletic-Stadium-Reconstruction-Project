@@ -18,7 +18,7 @@ Fonts:
   transition: all 0.25s;
 }
 
-.navbar-brand img{
+.navbar-brand img {
   height: clamp(70px, 11vw, 90px);
 }
 
@@ -40,10 +40,30 @@ Fonts:
   letter-spacing: 0.2px;
   margin: 0 20px;
   font-family: "Josefin Sans", sans-serif;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: #154987;
+  paint-order: stroke fill;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  opacity: 0;
+  transition: all 0.25s;
+  height: 4px;
+  width: 100%;
+  background: #F4E04D;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .nav-link:hover {
   color: #F4E04D;
+}
+
+.nav-link:hover::after {
+  opacity: 1;
 }
 
 .nav-link:focus {
@@ -130,9 +150,9 @@ Fonts:
   height: 100svh;
   overflow-x: clip;
   padding-block: 7rem;
-  /* animation: fade-out linear forwards;
+  animation: fade-out linear forwards;
   animation-timeline: view();
-  animation-range: 120vh; */
+  animation-range: 120vh;
 }
 
 .the-image {
@@ -164,7 +184,7 @@ Fonts:
 
 .header-text {
   color: white;
-  font-size: clamp(35px, 5vw, 55px);
+  font-size: clamp(30px, 5.5vw, 55px);
   padding: clamp(50px, 3vw, 100px);
   font-family: "Josefin Sans", sans-serif;
   margin: auto 0;
@@ -346,6 +366,7 @@ Fonts:
     animation-timeline: view();
     animation-range: 500px;
   }
+
   .header-text {
     font-size: clamp(30px, 5vh, 40px);
   }
@@ -358,12 +379,34 @@ Fonts:
     animation-timeline: view();
     animation-range: 900px;
   }
+
   .header-text {
     font-size: clamp(25px, 4.7vh, 35px);
   }
 }
 
-  /* scrollbar */
+.hidden {
+  opacity: 0;
+  transition: all 1.5s;
+  transform: translateY(100px);
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media(prefers-reduced-motion) {
+  .image-header {
+    animation: none;
+  }
+
+  .hidden {
+    transition: none;
+  }
+}
+
+/* scrollbar */
 
 /* width */
 
