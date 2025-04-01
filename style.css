@@ -130,9 +130,9 @@ Fonts:
   height: 100svh;
   overflow-x: clip;
   padding-block: 7rem;
-  animation: fade-out linear forwards;
+  /* animation: fade-out linear forwards;
   animation-timeline: view();
-  animation-range: 120vh;
+  animation-range: 120vh; */
 }
 
 .the-image {
@@ -351,7 +351,7 @@ Fonts:
   }
 }
 
-@media screen and (max-height:1000px) {
+@media screen and (max-height:800px) {
   .img-header {
     height: 700px;
     animation: fade-out linear forwards;
