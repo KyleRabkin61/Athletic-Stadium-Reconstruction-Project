@@ -150,9 +150,6 @@ Fonts:
   height: 100svh;
   overflow-x: clip;
   padding-block: 7rem;
-  /* animation: fade-out linear forwards;
-  animation-timeline: view();
-  animation-range: 120vh; */
 }
 
 .the-image {
@@ -165,12 +162,6 @@ Fonts:
   object-fit: cover;
   z-index: -1;
   filter: brightness(0.5);
-}
-
-@keyframes fade-out {
-  to {
-    opacity: 0;
-  }
 }
 
 .header {
@@ -360,11 +351,8 @@ Fonts:
 
 
 @media screen and (max-height:600px) {
-  .img-header {
+  .image-header {
     height: 600px;
-    animation: fade-out linear forwards;
-    animation-timeline: view();
-    animation-range: 500px;
   }
 
   .header-text {
@@ -373,11 +361,8 @@ Fonts:
 }
 
 @media screen and (max-height:800px) {
-  .img-header {
+  .image-header {
     height: 700px;
-    animation: fade-out linear forwards;
-    animation-timeline: view();
-    animation-range: 900px;
   }
 
   .header-text {
@@ -397,10 +382,6 @@ Fonts:
 }
 
 @media(prefers-reduced-motion) {
-  .image-header {
-    animation: none;
-  }
-
   .hidden {
     transition: none;
   }
