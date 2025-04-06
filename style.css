@@ -316,8 +316,6 @@ Fonts:
   width: 100%;
   height: auto;
   padding: 50px 0;
-  display: grid;
-  place-content: center;
   font-family: "Josefin Sans", sans-serif;
 }
 
@@ -327,7 +325,7 @@ Fonts:
   color: #154987;
   position: relative;
   top: 75px;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
 }
 
 .the-history-title::after {
@@ -345,16 +343,18 @@ Fonts:
 /* timeline css */
 
 .timeline-container {
-  width: 96.5%;
+  width: 70%;
   height: auto;
+  position: relative;
 }
 
 .timeline-container::after {
   position: absolute;
   content: ' ';
-  width: 4px;
-  height: 79.5%;
-  background-image: linear-gradient(to bottom, #154987, #F4E04D);
+  width: 3px;
+  height: 98%;
+  background-image: linear-gradient(to bottom, #2076DB, #F4E04D);
+  top: 3px;
 }
 
 .timeline-container ul {
@@ -364,11 +364,13 @@ Fonts:
 .timeline-container ul li {
   width: 50%;
   height: auto;
-  padding: 15px 20px;
+  padding: 10px 20px;
   background: white;
-  box-shadow: 0px 1px 14px 7px rgba(0, 0, 0, 0.90);
+  box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.384);
   border-radius: 10px;
   margin-bottom: 30px;
+  z-index: 99;
+  position: relative;
 }
 
 .timeline-container ul li:nth-child(odd) {
@@ -378,29 +380,124 @@ Fonts:
   text-align: right;
 }
 
+.timeline-container ul li:nth-child(odd) .date {
+  right: 20px;
+}
+
 .timeline-container ul li:nth-child(even) {
   float: right;
   clear: left;
   transform: translateX(30px);
 }
 
-.timeline-container ul li:nth-child(4) {
+.timeline-container ul li:nth-child(5) {
   margin-bottom: 0;
 }
 
 .timeline-container ul li .title {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
   color: #154987;
 }
 
-ul li p {
+ul li .content {
   font-size: 15px;
   color: black;
   margin: 7px 0;
+  line-height: 23px;
 }
 
+ul li a {
+  font-size: 15px;
+  color: #154987;
+  text-decoration: none;
+}
 
+ul li .date {
+  position: absolute;
+  top: -45px;
+  width: 135px;
+  height: 40px;
+  border-radius: 20px;
+  color: white;
+  background-image: linear-gradient(to bottom, #2076DB, #154987);
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+}
+
+.timeline-container ul li .circle {
+  width: 30px;
+  height: 30px;
+  background: rgba(32, 118, 219, 0.403);
+  border-radius: 50%;
+  position: absolute;
+  top: 9px;
+}
+
+.timeline-container ul li .circle::after {
+  content:' ';
+  width: 15px;
+  height: 15px;
+  background-color: #154987;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.timeline-container ul li:nth-child(odd) .circle {
+  right: -30px;
+  transform: translate(50%, -50%);
+}
+
+.timeline-container ul li:nth-child(even) .circle {
+  left: -30px;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width:1200px) {
+  .timeline-container {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width:992px) {
+  .timeline-container {
+    width: 80%;
+    transform: translateX(15px);
+  }
+
+  .timeline-container::after {
+    left: 13px;
+  }
+
+  .timeline-container ul li {
+    width: 100%;
+    float: none;
+    clear: none;
+    margin-bottom: 80px;
+  }
+
+  .timeline-container ul li:nth-child(odd) {
+    transform: translateX(0);
+    text-align: left;
+  }
+
+  .timeline-container ul li:nth-child(odd) .date{
+    left: 20px;
+  }
+
+  .timeline-container ul li:nth-child(odd) .circle{
+    left: -30px;
+    transform: translate(-50%, -50%);
+  }
+
+  .timeline-container ul li:nth-child(even) {
+    transform: translateX(0);
+  }
+}
 
 @media screen and (min-width:1200px) {
   .the-project {
