@@ -8,12 +8,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
+    <!-- Link to the tab logo -->
+    <link rel="shortcut icon" type="x-icon" href="imgs/football-tab-logo.png">
+
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
     <!-- CSS link -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Vue.js framework -->
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
 
     <!-- Google fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -74,7 +80,7 @@
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div id="vue_app" class="container-fluid">
 
         <!-- The Project -->
         <div class="the-project d-flex justify-content-center" id="project">
@@ -109,7 +115,6 @@
                 </div>
             </div>
         </div>
-    </div>
 
         <!-- The History -->
         <div class="the-history" id="history">
@@ -118,51 +123,21 @@
                 <div class="row d-flex justify-content-center align-items-center">
                     <div class="timeline-container">
                         <ul>
-                            <li>
-                                <h3 class="title">Hello</h3>
-                                <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                                    totam quod dicta molestiae
-                                    optio nihil.</p>
+                            <li v-for="event in timeline" :key="event.id">
+                                <h3 class="title">{{ event.title }}</h3>
+                                <div class="row mb-3 p-3 d-flex align-items-center">
+                                    <img src="timeline-imgs/night-game.JPG" alt="" class="timeline-img col-12 col-lg-6">
+                                    <p class="content col-12 col-lg-6">{{ event.description }}</p>
+                                </div>
                                 <span class="circle"></span>
-                                <span class="date">January 1st</span>
-                            </li>
-                            <li class="timeline-section">
-                                <h3 class="title">Hello</h3>
-                                <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                                    totam quod dicta molestiae
-                                    optio nihil.</p>
-                                <span class="circle"></span>
-                                <span class="date">February 1st</span>
-                            </li>
-                            <li class="timeline-section">
-                                <h3 class="title">Hello</h3>
-                                <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                                    totam quod dicta molestiae
-                                    optio nihil.</p>
-                                <span class="circle"></span>
-                                <span class="date">March 1st</span>
-                            </li>
-                            <li class="timeline-section">
-                                <h3 class="title">Hello</h3>
-                                <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                                    totam quod dicta molestiae
-                                    optio nihil.</p>
-                                <span class="circle"></span>
-                                <span class="date">April 1st</span>
-                            </li>
-                            <li class="timeline-section">
-                                <h3 class="title">Hello</h3>
-                                <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                                    totam quod dicta molestiae
-                                    optio nihil.</p>
-                                <span class="circle"></span>
-                                <span class="date">May 1st</span>
+                                <span class="date">{{ event.date }}</span>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
     <footer>
 
