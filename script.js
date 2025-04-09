@@ -1,3 +1,22 @@
+// Used vue for loop to create all timeline events
+const vue_app = Vue.createApp({
+    data() {
+        return {
+            timeline: []
+        };
+    },
+    created() {
+        fetch('timeline.json')
+            .then(response => response.json())
+            .then(json => {
+                this.timeline = json;
+            })
+            .catch(error => console.error("Error fetching data:", error));
+    }
+});
+
+vue_app.mount("#vue_app");
+
 let imgHeader = document.querySelector(".image-header");
 let height = parseInt(getComputedStyle(imgHeader).height, 10);
 
