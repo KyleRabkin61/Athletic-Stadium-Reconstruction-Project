@@ -373,7 +373,7 @@ Fonts:
   margin-bottom: 40px;
   z-index: 99;
   position: relative;
-  
+
 }
 
 .timeline-container ul li:nth-child(odd) {
@@ -451,7 +451,7 @@ ul li .date {
 }
 
 .timeline-container ul li .circle::after {
-  content:' ';
+  content: ' ';
   width: 15px;
   height: 15px;
   background-color: #154987;
@@ -524,11 +524,11 @@ ul li .date {
     text-align: center;
   }
 
-  .timeline-container ul li:nth-child(odd) .date{
+  .timeline-container ul li:nth-child(odd) .date {
     left: 20px;
   }
 
-  .timeline-container ul li:nth-child(odd) .circle{
+  .timeline-container ul li:nth-child(odd) .circle {
     left: -30px;
     transform: translate(-50%, -50%);
   }
@@ -542,7 +542,7 @@ ul li .date {
 
 .the-meaning {
   background: #e0e0e0;
-  height: 1200px;
+  height: 1000px;
 }
 
 .the-meaning-title {
@@ -551,7 +551,6 @@ ul li .date {
   color: #154987;
   position: relative;
   top: 75px;
-  margin-bottom: 50px;
   font-family: "Josefin Sans", sans-serif;
 }
 
@@ -568,7 +567,7 @@ ul li .date {
 }
 
 .testimonial-container {
-  height: 800px;
+  height: 600px;
 }
 
 .testimonial {
@@ -577,6 +576,7 @@ ul li .date {
   width: 100%;
   padding: 50px 0;
   background: white;
+  box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.984);
 }
 
 .testimonial .testimonial-img {
@@ -584,10 +584,11 @@ ul li .date {
   width: 170px;
   object-fit: cover;
   border-radius: 50%;
+  border: #154987 5px solid;
 }
 
 .testimonial .slide {
-  row-gap: 30px;
+  row-gap: 20px;
 }
 
 .slide p {
@@ -604,25 +605,27 @@ ul li .date {
 }
 
 .slide .details {
-  font-family: "Instrument Sans", sans-serif;
+
 }
 
 .details .name {
   font-size: 14px;
   font-weight: 600;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .details .job {
   font-size: 12px;
+  font-style: italic;
   font-weight: 400;
+  padding-bottom: 20px;
+  font-family: "Instrument Sans", sans-serif;
 }
 
 .carousel-indicators {
-  position: relative;
-  top: 500px;
   background-color: #154987;
   width: fit-content;
-  margin: 10px auto;
+  margin: -20px auto;
   padding: 0 10px;
 }
 
@@ -665,9 +668,33 @@ ul li .date {
 }
 
 .carousel-control-next-icon:hover {
-  background-color: #154987;
+  background-color: rgba(17, 63, 117, 1);
   border-radius: 100%;
   transition: 0.35s;
+}
+
+/* media for testimonial carousel */
+
+@media screen and (max-width:991px) {
+  .slide p {
+    padding: 0 100px;
+  }
+
+  .carousel-control-prev-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .carousel-control-next-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .slide p {
+    padding: 0 60px;
+  }
 }
 
 @media screen and (min-width:1200px) {
@@ -714,9 +741,13 @@ ul li .date {
   .the-project {
     height: 900px;
   }
-  
+
   .the-meaning {
     height: 900px;
+  }
+
+  .the-meaning-title {
+    margin-bottom: 70px;
   }
 }
 

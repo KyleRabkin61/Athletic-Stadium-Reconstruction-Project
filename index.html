@@ -165,14 +165,14 @@
                                 <div class="testimonial-content">
                                     <div
                                         class="slide d-flex justify-content-center align-items-center flex-column">
-                                        <img src="testimonial-imgs/bleakely.JPG" alt="" class="testimonial-img">
+                                        <img v-bind:src="person.img" v-bind:alt="person.alt" class="testimonial-img">
                                         <p class="testimonial-text text-center">
-                                            {person.quote}
+                                            {{ person.quote }}
                                         </p>
                                         <i class="bx bxs-quote-alt-left quote-icon"></i>
                                         <div class="details d-flex align-items-center flex-column">
-                                            <span class="name">Jonathan Hornik</span>
-                                            <span class="job">Marlboro Township Mayor</span>
+                                            <span class="name">{{ person.name }}</span>
+                                            <span class="job">{{ person.job }}</span>
                                         </div>
                                     </div>
                                 </div>
