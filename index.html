@@ -134,7 +134,7 @@
                             <li v-for="event in timeline" :key="event.id">
                                 <h3 class="title">{{ event.title }}</h3>
                                 <div class="row mb-3 p-3 d-flex align-items-center">
-                                    <img v-bind:src="event.img" alt="" class="timeline-img col-12 col-lg-6">
+                                    <img v-bind:src="event.img" v-bind:alt="event.alt" class="timeline-img col-12 col-lg-6">
                                     <p class="content col-12 col-lg-6">{{ event.description }}</p>
                                 </div>
                                 <span class="circle"></span>
