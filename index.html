@@ -18,6 +18,9 @@
     <!-- CSS link -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <!-- Vue.js framework -->
     <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
 
@@ -49,19 +52,24 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <button class="nav-link text-lg-center" aria-current="page" onclick="scrollToSection('project');">Project</button>
+                        <button class="nav-link text-lg-center" aria-current="page"
+                            onclick="scrollToSection('project');">Project</button>
                     </li>
                     <li class="nav-item">
-                        <button class="nav-link text-lg-center" aria-current="page" onclick="scrollToSection('funding');">Funding</button>
+                        <button class="nav-link text-lg-center" aria-current="page"
+                            onclick="scrollToSection('funding');">Funding</button>
                     </li>
                     <li class="nav-item">
-                        <button class="nav-link text-lg-center" aria-current="page" onclick="scrollToSection('history');">History</button>
+                        <button class="nav-link text-lg-center" aria-current="page"
+                            onclick="scrollToSection('history');">History</button>
                     </li>
                     <li class="nav-item">
-                        <button class="nav-link text-lg-center" aria-current="page" onclick="scrollToSection('meaning');">Meaning</button>
+                        <button class="nav-link text-lg-center" aria-current="page"
+                            onclick="scrollToSection('meaning');">Meaning</button>
                     </li>
                     <li class="nav-item">
-                        <button class="nav-link text-lg-center" aria-current="page" onclick="scrollToSection('result');">Result</button>
+                        <button class="nav-link text-lg-center" aria-current="page"
+                            onclick="scrollToSection('result');">Result</button>
                     </li>
                 </ul>
             </div>
@@ -137,6 +145,136 @@
                 </div>
             </div>
         </div>
+
+        <!-- The Meaning -->
+        <div class="the-meaning d-flex justify-content-center" id="meaning">
+            <div class="row d-flex justify-content-evenly align-items-lg-center hidden">
+                <h1 class="the-meaning-title text-center">The Meaning</h1>
+                <div class="testimonial-container d-flex align-items-center justify-content-center">
+                    <div class="testimonial">
+                        <div id="carouselExampleIndicators" class="carousel slide">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="testimonial-content">
+                                    <div
+                                        class="slide d-flex justify-content-center align-items-center flex-column">
+                                        <img src="testimonial-imgs/bleakely.JPG" alt="" class="testimonial-img">
+                                        <p class="testimonial-text text-center">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellendus quasi
+                                            debitis facere quis illo numquam optio, odio sint iusto delectus minus iste
+                                            voluptate illum accusamus aliquid nihil qui esse nobis dolorum aspernatur
+                                            voluptatem. Suscipit, pariatur provident! Fuga neque, ex amet temporibus porro eius
+                                            quam facilis, magnam blanditiis itaque ab!
+                                        </p>
+                                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+                                        <div class="details d-flex align-items-center flex-column">
+                                            <span class="name">Jonathan Hornik</span>
+                                            <span class="job">Marlboro Township Mayor</span>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="testimonial-content">
+                                    <div
+                                        class="slide d-flex justify-content-center align-items-center flex-column">
+                                        <img src="testimonial-imgs/bleakely.JPG" alt="" class="testimonial-img">
+                                        <p class="testimonial-text text-center">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellendus quasi
+                                            debitis facere quis illo numquam optio, odio sint iusto delectus minus iste
+                                            voluptate illum accusamus aliquid nihil qui esse nobis dolorum aspernatur
+                                            voluptatem. Suscipit, pariatur provident! Fuga neque, ex amet temporibus porro eius
+                                            quam facilis, magnam blanditiis itaque ab!
+                                        </p>
+                                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+                                        <div class="details d-flex align-items-center flex-column">
+                                            <span class="name">Jonathan Hornik</span>
+                                            <span class="job">Marlboro Township Mayor</span>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="testimonial-content">
+                                    <div
+                                        class="slide d-flex justify-content-center align-items-center flex-column">
+                                        <img src="testimonial-imgs/bleakely.JPG" alt="" class="testimonial-img">
+                                        <p class="testimonial-text text-center">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellendus quasi
+                                            debitis facere quis illo numquam optio, odio sint iusto delectus minus iste
+                                            voluptate illum accusamus aliquid nihil qui esse nobis dolorum aspernatur
+                                            voluptatem. Suscipit, pariatur provident! Fuga neque, ex amet temporibus porro eius
+                                            quam facilis, magnam blanditiis itaque ab!
+                                        </p>
+                                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+                                        <div class="details d-flex align-items-center flex-column">
+                                            <span class="name">Jonathan Hornik</span>
+                                            <span class="job">Marlboro Township Mayor</span>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="testimonial-content">
+                                    <div
+                                        class="slide d-flex justify-content-center align-items-center flex-column">
+                                        <img src="testimonial-imgs/bleakely.JPG" alt="" class="testimonial-img">
+                                        <p class="testimonial-text text-center">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellendus quasi
+                                            debitis facere quis illo numquam optio, odio sint iusto delectus minus iste
+                                            voluptate illum accusamus aliquid nihil qui esse nobis dolorum aspernatur
+                                            voluptatem. Suscipit, pariatur provident! Fuga neque, ex amet temporibus porro eius
+                                            quam facilis, magnam blanditiis itaque ab!
+                                        </p>
+                                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+                                        <div class="details d-flex align-items-center flex-column">
+                                            <span class="name">Jonathan Hornik</span>
+                                            <span class="job">Marlboro Township Mayor</span>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="testimonial-content">
+                                    <div
+                                        class="slide d-flex justify-content-center align-items-center flex-column">
+                                        <img src="testimonial-imgs/bleakely.JPG" alt="" class="testimonial-img">
+                                        <p class="testimonial-text text-center">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellendus quasi
+                                            debitis facere quis illo numquam optio, odio sint iusto delectus minus iste
+                                            voluptate illum accusamus aliquid nihil qui esse nobis dolorum aspernatur
+                                            voluptatem. Suscipit, pariatur provident! Fuga neque, ex amet temporibus porro eius
+                                            quam facilis, magnam blanditiis itaque ab!
+                                        </p>
+                                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+                                        <div class="details d-flex align-items-center flex-column">
+                                            <span class="name">Jonathan Hornik</span>
+                                            <span class="job">Marlboro Township Mayor</span>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer>
@@ -154,6 +292,7 @@
 
     <!-- JS link -->
     <script src="script.js"></script>
+
 </body>
 
 </html>
