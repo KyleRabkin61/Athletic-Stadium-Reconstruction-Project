@@ -1,37 +1,36 @@
 [
     {
         "name": "Jonathan Hornik",
-        "job": "This was the first night game ever at Marlboro Highschool.  In order for this to happen, the school had to rent out ten construction lights and surrond the field.",
-        "img": "timeline-imgs/night-game.JPG",
-        "description": "10/2011",
-        "alt": "lorem"
+        "job": "Marlboro township Mayor",
+        "img": "https://picsum.photos/300/300",
+        "quote": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, provident, saepe labore at, voluptas inventore fugiat ducimus libero reiciendis eveniet a dolores quisquam aspernatur expedita. Repellendus, omnis id sunt dolore commodi eaque cum ad hic, mollitia praesentium ipsa aut obcaecati temporibus explicabo non tenetur. Nesciunt culpa sed omnis hic, totam tempore neque, delectus quasi molestias ipsam animi? Vel unde, ut enim similique repellat quod dicta rem ea incidunt, voluptatum laborum assumenda officiis non aspernatur corrupti.",
+        "alt": "Photo of Jonathan Hornik"
     },
     {
         "name": "David Bleakely",
-        "job": "This was the first night game ever at Marlboro Highschool.  In order for this to happen, the school had to rent out ten construction lights and surrond the field.",
-        "img": "timeline-imgs/night-game.JPG",
-        "description": "10/2011",
-        "alt": "lorem"
+        "job": "Marlboro High School Principal",
+        "img": "testimonial-imgs/bleakely.JPG",
+        "quote": "The reconstruction of our Athletic Stadium is a profound change for Marlboro High School.  The new stadium will reflect a standard of excellence that both our student-athletes and our coaches represent every day, and that our community deserves.  While the former stadium served this community well for more than 50 years, I am very excited about the opportunities the new stadium will provide for our school community.  I am also deeply grateful to Mayor Hornik and the Marlboro Township government collectively for making this dream into a reality.",
+        "alt": "Photo of David Bleakely"
     },
     {
         "name": "David Ryden",
-        "job": "This was the first night game ever at Marlboro Highschool.  In order for this to happen, the school had to rent out ten construction lights and surrond the field.",
-        "img": "timeline-imgs/night-game.JPG",
-        "description": "10/2011",
-        "alt": "lorem"
+        "job": "Marlboro High School Athletic Director",
+        "img": "testimonial-imgs/ryden.JPG",
+        "quote": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, provident, saepe labore at, voluptas inventore fugiat ducimus libero reiciendis eveniet a dolores quisquam aspernatur expedita. Repellendus, omnis id sunt dolore commodi eaque cum ad hic, mollitia praesentium ipsa aut obcaecati temporibus explicabo non tenetur. Nesciunt culpa sed omnis hic, totam tempore neque, delectus quasi molestias ipsam animi? Vel unde, ut enim similique repellat quod dicta rem ea incidunt, voluptatum laborum assumenda officiis non aspernatur corrupti.","alt": "Photo of David Ryden"
     },
     {
         "name": "Jason Dagato",
-        "job": "This was the first night game ever at Marlboro Highschool.  In order for this to happen, the school had to rent out ten construction lights and surrond the field.",
+        "job": "Marlboro High School Football Coach",
         "img": "timeline-imgs/night-game.JPG",
-        "description": "10/2011",
-        "alt": "lorem"
+        "quote": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, provident, saepe labore at, voluptas inventore fugiat ducimus libero reiciendis eveniet a dolores quisquam aspernatur expedita. Repellendus, omnis id sunt dolore commodi eaque cum ad hic, mollitia praesentium ipsa aut obcaecati temporibus explicabo non tenetur. Nesciunt culpa sed omnis hic, totam tempore neque, delectus quasi molestias ipsam animi? Vel unde, ut enim similique repellat quod dicta rem ea incidunt, voluptatum laborum assumenda officiis non aspernatur corrupti.",
+        "alt": "Photo of Jason Dagato"
     },
     {
         "name": "Tony Sesa",
-        "job": "This was the first night game ever at Marlboro Highschool.  In order for this to happen, the school had to rent out ten construction lights and surrond the field.",
+        "job": "Marlboro High School Track Coach",
         "img": "timeline-imgs/night-game.JPG",
-        "description": "10/2011",
-        "alt": "lorem"
+        "quote": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, provident, saepe labore at, voluptas inventore fugiat ducimus libero reiciendis eveniet a dolores quisquam aspernatur expedita. Repellendus, omnis id sunt dolore commodi eaque cum ad hic, mollitia praesentium ipsa aut obcaecati temporibus explicabo non tenetur. Nesciunt culpa sed omnis hic, totam tempore neque, delectus quasi molestias ipsam animi? Vel unde, ut enim similique repellat quod dicta rem ea incidunt, voluptatum laborum assumenda officiis non aspernatur corrupti.",
+        "alt": "Photo of Tony Sesa"
     }
 ]

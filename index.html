@@ -78,7 +78,7 @@
 
     <!-- Header -->
     <div class="image-header">
-        <img src="Athletic-Stadium-Images/before.JPG" alt="" class="the-image">
+        <img src="athletic-stadium-imgs/before.JPG" alt="" class="the-image">
         <div class="row d-flex justify-content-center align-items-center flex-column">
             <div class="header d-flex align-items-center flex-column">
                 <h1 class="header-text text-center">The Marlboro Athletic Stadium Reconstruction Process</h1>
@@ -161,97 +161,13 @@
                               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
                             </div>
                             <div class="carousel-inner">
-                              <div class="carousel-item active">
+                              <div class="carousel-item" v-for="(person, index) in testimonial" :class="{ active: index === 0 }" :key="person.id">
                                 <div class="testimonial-content">
                                     <div
                                         class="slide d-flex justify-content-center align-items-center flex-column">
                                         <img src="testimonial-imgs/bleakely.JPG" alt="" class="testimonial-img">
                                         <p class="testimonial-text text-center">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellendus quasi
-                                            debitis facere quis illo numquam optio, odio sint iusto delectus minus iste
-                                            voluptate illum accusamus aliquid nihil qui esse nobis dolorum aspernatur
-                                            voluptatem. Suscipit, pariatur provident! Fuga neque, ex amet temporibus porro eius
-                                            quam facilis, magnam blanditiis itaque ab!
-                                        </p>
-                                        <i class="bx bxs-quote-alt-left quote-icon"></i>
-                                        <div class="details d-flex align-items-center flex-column">
-                                            <span class="name">Jonathan Hornik</span>
-                                            <span class="job">Marlboro Township Mayor</span>
-                                        </div>
-                                    </div>
-                                </div>
-                              </div>
-                              <div class="carousel-item">
-                                <div class="testimonial-content">
-                                    <div
-                                        class="slide d-flex justify-content-center align-items-center flex-column">
-                                        <img src="testimonial-imgs/bleakely.JPG" alt="" class="testimonial-img">
-                                        <p class="testimonial-text text-center">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellendus quasi
-                                            debitis facere quis illo numquam optio, odio sint iusto delectus minus iste
-                                            voluptate illum accusamus aliquid nihil qui esse nobis dolorum aspernatur
-                                            voluptatem. Suscipit, pariatur provident! Fuga neque, ex amet temporibus porro eius
-                                            quam facilis, magnam blanditiis itaque ab!
-                                        </p>
-                                        <i class="bx bxs-quote-alt-left quote-icon"></i>
-                                        <div class="details d-flex align-items-center flex-column">
-                                            <span class="name">Jonathan Hornik</span>
-                                            <span class="job">Marlboro Township Mayor</span>
-                                        </div>
-                                    </div>
-                                </div>
-                              </div>
-                              <div class="carousel-item">
-                                <div class="testimonial-content">
-                                    <div
-                                        class="slide d-flex justify-content-center align-items-center flex-column">
-                                        <img src="testimonial-imgs/bleakely.JPG" alt="" class="testimonial-img">
-                                        <p class="testimonial-text text-center">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellendus quasi
-                                            debitis facere quis illo numquam optio, odio sint iusto delectus minus iste
-                                            voluptate illum accusamus aliquid nihil qui esse nobis dolorum aspernatur
-                                            voluptatem. Suscipit, pariatur provident! Fuga neque, ex amet temporibus porro eius
-                                            quam facilis, magnam blanditiis itaque ab!
-                                        </p>
-                                        <i class="bx bxs-quote-alt-left quote-icon"></i>
-                                        <div class="details d-flex align-items-center flex-column">
-                                            <span class="name">Jonathan Hornik</span>
-                                            <span class="job">Marlboro Township Mayor</span>
-                                        </div>
-                                    </div>
-                                </div>
-                              </div>
-                              <div class="carousel-item">
-                                <div class="testimonial-content">
-                                    <div
-                                        class="slide d-flex justify-content-center align-items-center flex-column">
-                                        <img src="testimonial-imgs/bleakely.JPG" alt="" class="testimonial-img">
-                                        <p class="testimonial-text text-center">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellendus quasi
-                                            debitis facere quis illo numquam optio, odio sint iusto delectus minus iste
-                                            voluptate illum accusamus aliquid nihil qui esse nobis dolorum aspernatur
-                                            voluptatem. Suscipit, pariatur provident! Fuga neque, ex amet temporibus porro eius
-                                            quam facilis, magnam blanditiis itaque ab!
-                                        </p>
-                                        <i class="bx bxs-quote-alt-left quote-icon"></i>
-                                        <div class="details d-flex align-items-center flex-column">
-                                            <span class="name">Jonathan Hornik</span>
-                                            <span class="job">Marlboro Township Mayor</span>
-                                        </div>
-                                    </div>
-                                </div>
-                              </div>
-                              <div class="carousel-item">
-                                <div class="testimonial-content">
-                                    <div
-                                        class="slide d-flex justify-content-center align-items-center flex-column">
-                                        <img src="testimonial-imgs/bleakely.JPG" alt="" class="testimonial-img">
-                                        <p class="testimonial-text text-center">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellendus quasi
-                                            debitis facere quis illo numquam optio, odio sint iusto delectus minus iste
-                                            voluptate illum accusamus aliquid nihil qui esse nobis dolorum aspernatur
-                                            voluptatem. Suscipit, pariatur provident! Fuga neque, ex amet temporibus porro eius
-                                            quam facilis, magnam blanditiis itaque ab!
+                                            {person.quote}
                                         </p>
                                         <i class="bx bxs-quote-alt-left quote-icon"></i>
                                         <div class="details d-flex align-items-center flex-column">

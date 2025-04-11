@@ -2,16 +2,20 @@
 const vue_app = Vue.createApp({
     data() {
         return {
-            timeline: []
+            timeline: [],
+            testimonial: []
         };
     },
     created() {
-        fetch('timeline.json')
-            .then(response => response.json())
-            .then(json => {
-                this.timeline = json;
-            })
-            .catch(error => console.error("Error fetching data:", error));
+        Promise.all([
+            fetch('timeline.json').then(response => response.json()),
+            fetch('testimonial.json').then(response => response.json())
+        ])
+        .then(([timelineData, testimonialData]) => {
+            this.timeline = timelineData;
+            this.testimonial = testimonialData;
+        })
+        .catch(error => console.error("Error fetching data:", error));
     }
 });
 
