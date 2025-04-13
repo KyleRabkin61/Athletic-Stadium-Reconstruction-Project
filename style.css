@@ -733,6 +733,29 @@ video {
   padding: 0 !important;
 }
 
+footer {
+  height: auto;
+  background: #154987;
+  padding: 50px 0;
+}
+
+footer h1 {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 50px;
+}
+
+footer .footer-content {
+  color: white;
+  font-family: "Instrument Sans", sans-serif;
+  font-size: clamp(15px, 3vw, 20px);
+}
+
+footer .footer-icon {
+  position: relative;
+  bottom: 8px;
+}
+
 @media screen and (min-width:1200px) {
   .the-project {
     height: 900px;
