@@ -134,7 +134,8 @@
                             <li v-for="event in timeline" :key="event.id">
                                 <h3 class="title">{{ event.title }}</h3>
                                 <div class="row mb-3 p-3 d-flex align-items-center">
-                                    <img v-bind:src="event.img" v-bind:alt="event.alt" class="timeline-img col-12 col-lg-6">
+                                    <img v-bind:src="event.img" v-bind:alt="event.alt"
+                                        class="timeline-img col-12 col-lg-6">
                                     <p class="content col-12 col-lg-6">{{ event.description }}</p>
                                 </div>
                                 <span class="circle"></span>
@@ -154,43 +155,60 @@
                     <div class="testimonial">
                         <div id="carouselExampleIndicators" class="carousel slide">
                             <div class="carousel-indicators">
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                                    aria-label="Slide 5"></button>
                             </div>
                             <div class="carousel-inner">
-                              <div class="carousel-item" v-for="(person, index) in testimonial" :class="{ active: index === 0 }" :key="person.id">
-                                <div class="testimonial-content">
-                                    <div
-                                        class="slide d-flex justify-content-center align-items-center flex-column">
-                                        <img v-bind:src="person.img" v-bind:alt="person.alt" class="testimonial-img">
-                                        <p class="testimonial-text text-center">
-                                            {{ person.quote }}
-                                        </p>
-                                        <i class="bx bxs-quote-alt-left quote-icon"></i>
-                                        <div class="details d-flex align-items-center flex-column">
-                                            <span class="name">{{ person.name }}</span>
-                                            <span class="job">{{ person.job }}</span>
+                                <div class="carousel-item" v-for="(person, index) in testimonial"
+                                    :class="{ active: index === 0 }" :key="person.id">
+                                    <div class="testimonial-content">
+                                        <div class="slide d-flex justify-content-center align-items-center flex-column">
+                                            <img v-bind:src="person.img" v-bind:alt="person.alt"
+                                                class="testimonial-img">
+                                            <p class="testimonial-text text-center">
+                                                {{ person.quote }}
+                                            </p>
+                                            <i class="bx bxs-quote-alt-left quote-icon"></i>
+                                            <div class="details d-flex align-items-center flex-column">
+                                                <span class="name">{{ person.name }}</span>
+                                                <span class="job">{{ person.job }}</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                              </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
                             </button>
-                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- The Result -->
+        <div class="the-result d-flex justify-content-center" id="result">
+            <div class="row d-flex justify-content-evenly align-items-lg-center hidden">
+                <h1 class="the-result-title text-center">The Result</h1>
+                <video controls src="temp.mp4"></video>
+            </div>
+        </div>
+    </div>
     </div>
 
     <footer>
