@@ -131,9 +131,9 @@
                 <div class="row d-flex justify-content-center align-items-center">
                     <div class="timeline-container">
                         <ul>
-                            <li v-for="event in timeline" :key="event.id">
+                            <li v-for="event in timeline" :key="event.id" class="justify-content-center align-items-center flex-column">
                                 <h3 class="title">{{ event.title }}</h3>
-                                <div class="row mb-3 p-3 d-flex align-items-center">
+                                <div class="row d-flex align-items-center">
                                     <img v-bind:src="event.img" v-bind:alt="event.alt"
                                         class="timeline-img col-12 col-lg-6">
                                     <p class="content col-12 col-lg-6">{{ event.description }}</p>
@@ -230,7 +230,13 @@
                 <i class='bx bx-phone footer-icon me-2'></i>
                 <p class="phone text-center">732-617-8393</p>
             </div>
-            <img src="imgs/MHS-logo.png" alt="" class="footer-img">
+            <a href="https://marlboro.frhsd.com/" target="_blank">
+                <img src="imgs/MHS-logo.png" alt="" class="footer-img">
+            </a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Marlboro High School. All Rights Reserved.</p>
+            <p>Designed by <a href="https://github.com/KyleRabkin61" class="adam" target="_blank">Kyle Rabkin</a></p>
         </div>
     </footer>
 
