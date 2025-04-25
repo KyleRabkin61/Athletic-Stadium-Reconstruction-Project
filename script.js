@@ -85,3 +85,25 @@ if ("IntersectionObserver" in window) {
     // Fallback for older browsers
     document.querySelectorAll(".hidden").forEach((el) => el.classList.add("show"));
 }
+
+//  Back to top button
+
+// Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 56 || document.documentElement.scrollTop > 56) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}

@@ -737,6 +737,39 @@ video {
   padding: 0 !important;
 }
 
+/* back to top css*/
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #154987;
+  color: white;
+  border: 3px #F4E04D solid;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
+  transition: all 0.3s;
+}
+
+#myBtn:hover {
+  transition: 0.3s;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.984);
+}
+
+#myBtn:active {
+  transition: 0.3s;
+  box-shadow: none;
+}
+
+/* footer css */
+
 footer {
   height: auto;
   background: #154987;
