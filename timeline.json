@@ -1,23 +1,23 @@
 [
     {
-        "title": "First Night Game",
-        "description": "This was the first night game ever at Marlboro Highschool.  In order for this to happen, the school had to rent out ten construction lights and surrond the field.",
+        "title": "Mustangs Host First Night Game",
+        "description": "For the first time in school history, Marlboro High School hosted a football game under the lights. Without permanent stadium lighting, the school went all in, renting ten towering construction lights to surround the field and turn night into day.",
         "img": "timeline-imgs/night-game.JPG",
         "date": "10/2011",
+        "alt": "Picture of first night game"
+    },
+    {
+        "title": "Mustangs Stampede Into Playoffs",
+        "description": "Marlboro defeats Washington Township 21-17 to advance to the second round of the NJSIAA Group 5 playoffs.  It was the first time Marlboro had qualified for the playoffs since 1999, and the first playoff victory since 1994.",
+        "img": "https://picsum.photos/300/300",
+        "date": "10/2022",
         "alt": "lorem"
     },
     {
-        "title": "title",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias adipisci ipsa expedita nihil cum culpa!",
+        "title": "History Made in Marlboro",
+        "description": "Marlboro defeats South Brunswick 26-16 to advance to the second round of the NJSIAA Group 5 playoffs.  Marlboro made the playoffs in back to back seasons for the first time in school history.  The team would advance to the NJSIAA South Jersey Group 5 Sectional 5 where they would lose in double overtime.",
         "img": "https://picsum.photos/300/300",
-        "date": "mm/yyyy",
-        "alt": "lorem"
-    },
-    {
-        "title": "title",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias adipisci ipsa expedita nihil cum culpa!",
-        "img": "https://picsum.photos/300/300",
-        "date": "mm/yyyy",
+        "date": "10/2023",
         "alt": "lorem"
     },
     {
