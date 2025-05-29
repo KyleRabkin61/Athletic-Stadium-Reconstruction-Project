@@ -14,8 +14,12 @@ Fonts:
 
 /* navbar css */
 
+body {
+  overflow-x: hidden;
+}
+
 .navbar {
-  transition: all 0.25s;
+  transition: background-color 0.25s, border-bottom 0.25s;
 }
 
 .navbar-brand img {
@@ -142,6 +146,67 @@ Fonts:
 }
 
 /* header css */
+
+.football {
+    background-color: brown;
+    width: 210px;
+    border-radius: 200px 40px 200px 40px;
+    height: 200px;
+    position: absolute;
+    top: 30%;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+    z-index: 22;
+}
+
+.white {
+    width: 20px;
+    height: 130px;
+    background: white;
+}
+
+.one {
+    position: relative;
+    rotate: -45deg;
+    top: 55px;
+    right: 40px;
+}
+
+.two {
+    position: relative;
+    rotate: -45deg;
+    bottom: 55px;
+    left: 40px;
+}
+
+.laces {
+    position: relative;
+    width: 8px;
+    height: 120px;
+    background: white;
+    border-radius: 4px;
+    rotate: 45deg;
+}
+
+.lace-line {
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background: white;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.lace-line:nth-child(1) { top: 5px; }
+.lace-line:nth-child(2) { top: 20px; }
+.lace-line:nth-child(3) { top: 35px; }
+.lace-line:nth-child(4) { top: 50px; }
+.lace-line:nth-child(5) { top: 65px; }
+.lace-line:nth-child(6) { top: 80px; }
+.lace-line:nth-child(7) { top: 95px; }
+.lace-line:nth-child(8) { top: 110px; }
+
 
 .image-header {
   display: grid;
@@ -755,7 +820,7 @@ video {
   border-radius: 10px;
   font-size: 18px;
   font-family: "Josefin Sans", sans-serif;
-  transition: all 0.3s;
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 #myBtn:hover {

@@ -107,3 +107,62 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+const football = document.querySelector('.football');
+const startX = -window.innerWidth * 1.1;
+const endX = window.innerWidth * 0.2;
+const baseY = 400;
+const arcHeight = 500;
+const peakY = baseY - arcHeight;
+
+gsap.fromTo(football, {
+  x: startX,
+  y: baseY
+}, {
+  x: endX,
+  duration: 2,
+  delay: 1,
+  rotate: 90,
+  ease: "none",
+  onUpdate: function () {
+    const progress = this.progress();
+    const parabolaY = baseY - 4 * (baseY - peakY) * progress * (1 - progress);
+    gsap.set(football, { y: parabolaY });
+  }
+});
+
+
+gsap.fromTo(['.header', '.explore'], {
+    opacity: 0
+}, {
+    opacity: 1,
+    duration: 2,
+    delay: 3
+})
+
+gsap.fromTo('.navbar', {
+    y: -150
+}, {
+    y: 0,
+    duration: 1,
+    delay: 3,
+    ease: 'power2.Out'
+})
+
+gsap.from('.the-image', {
+    filter: "brightness(1)",
+    duration: 1.5,
+    delay: 3
+})
+
+$('document').ready(() => {
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 56 || document.documentElement.scrollTop > 56) {
+            $('#myBtn').fadeIn(200)
+        } else {
+            $('#myBtn').fadeOut(200)
+        }
+    }
+})
