@@ -109,8 +109,8 @@ function topFunction() {
 }
 
 const football = document.querySelector('.football');
-const startX = -window.innerWidth * 1.1;
-const endX = window.innerWidth * 0.2;
+const startX = -window.innerWidth * 1.3;
+const endX = window.innerWidth * 0.3;
 const baseY = 400;
 const arcHeight = 500;
 const peakY = baseY - arcHeight;
