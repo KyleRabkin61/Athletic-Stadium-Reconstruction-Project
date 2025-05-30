@@ -148,12 +148,13 @@ body {
 /* header css */
 
 .football {
-    background-color: brown;
+    background: radial-gradient(circle at 30% 30%, #8B4513, #180b02); /* Adds 3D depth */
     width: 210px;
     border-radius: 200px 40px 200px 40px;
     height: 200px;
     position: absolute;
     top: 30%;
+    right: 40%;
     overflow: hidden;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
     z-index: 22;

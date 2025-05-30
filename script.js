@@ -109,18 +109,23 @@ function topFunction() {
 }
 
 const football = document.querySelector('.football');
-const startX = -window.innerWidth * 1.3;
-const endX = window.innerWidth * 0.3;
+
+const screenWidth = window.innerWidth;
+const startX = -screenWidth * 0.8;
+const endX = screenWidth * 1;
 const baseY = 400;
 const arcHeight = 500;
 const peakY = baseY - arcHeight;
+
+// Calculate duration: e.g., 1 second per 500px of width, with a minimum duration
+const duration = Math.max(2, screenWidth / 700);
 
 gsap.fromTo(football, {
   x: startX,
   y: baseY
 }, {
   x: endX,
-  duration: 2,
+  duration: duration,
   delay: 1,
   rotate: 90,
   ease: "none",
