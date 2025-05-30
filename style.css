@@ -232,7 +232,7 @@ body {
 .header {
   background: #154987;
   width: clamp(350px, 60vw, 575px);
-  height: clamp(200px, 40svh, 600px);
+  height: clamp(250px, 40svh, 600px);
   border: #F4E04D 5px solid;
   border-radius: 10px;
   padding: clamp(50px, 3vw, 100px);
