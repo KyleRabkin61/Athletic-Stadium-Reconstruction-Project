@@ -111,10 +111,10 @@ function topFunction() {
 const football = document.querySelector('.football');
 
 const screenWidth = window.innerWidth;
-const startX = -screenWidth * 0.8;
+const startX = -screenWidth * 0.9;
 const endX = screenWidth * 1;
-const baseY = 400;
-const arcHeight = 500;
+const baseY = 600;
+const arcHeight = 700;
 const peakY = baseY - arcHeight;
 
 // Calculate duration: e.g., 1 second per 500px of width, with a minimum duration
