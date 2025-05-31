@@ -277,7 +277,7 @@ body {
 
 .the-project {
   background: #F5F5F5;
-  height: 1200px;
+  height: 1300px;
 }
 
 .the-project-title {
@@ -304,7 +304,7 @@ body {
 
 .the-project-image {
   width: 80%;
-  height: 400px;
+  height: 500px;
   background-image: url(athletic-stadium-imgs/before.JPG);
   background-position: center center;
   background-repeat: no-repeat;
@@ -315,7 +315,7 @@ body {
 
 .the-project-info {
   width: 80%;
-  height: 400px;
+  height: 500px;
   background: #154987;
   border: #F4E04D 5px solid;
   border-radius: 10px;
@@ -323,13 +323,14 @@ body {
   box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.984);
   position: relative;
   font-family: "Instrument Sans", sans-serif;
+  font-size: clamp(17px, 2vw, 19px);
 }
 
 /* the funding css */
 
 .the-funding {
   background: #113F75;
-  height: 1200px;
+  height: 1300px;
 }
 
 .the-funding-title {
@@ -356,7 +357,7 @@ body {
 
 .the-funding-image {
   width: 80%;
-  height: 400px;
+  height: 500px;
   background-image: url(athletic-stadium-imgs/before.JPG);
   background-position: center center;
   background-repeat: no-repeat;
@@ -367,7 +368,7 @@ body {
 
 .the-funding-info {
   width: 80%;
-  height: 400px;
+  height: 500px;
   background: white;
   border: #F4E04D 5px solid;
   border-radius: 10px;
@@ -375,6 +376,7 @@ body {
   box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.984);
   position: relative;
   font-family: "Instrument Sans", sans-serif;
+  font-size: clamp(17px, 2vw, 19px);
 }
 
 /* the history css */
