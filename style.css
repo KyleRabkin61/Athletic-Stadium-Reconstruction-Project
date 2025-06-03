@@ -260,6 +260,11 @@ body {
   color: black;
 }
 
+.view {
+  font-size: 20px;
+  font-weight: 500;
+}
+
 .explore:hover {
   background: #F4E04D !important;
   box-shadow: 0px 1px 14px 7px rgba(0, 0, 0, 0.90);
