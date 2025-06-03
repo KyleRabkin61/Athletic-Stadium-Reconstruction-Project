@@ -1,37 +1,37 @@
 [
     {
-        "title": "Adaobi Unachukwu Becomes an All-American",
+        "title": "Adaobi Unachukwu Becomes an All-American.",
         "description": "As she approached the end of her high school years, Adaobi was honored with national recognition by being selected as a member of the prestigious All-American Track and Field Team in 2008, a testament to her exceptional talent, discipline, and perseverance on the track.",
         "img": "timeline-imgs/marlborogtrack.jpg",
         "date": "03/2008",
         "alt": "Adaobi Unachukwu running"
     },
+        {
+        "title": "Marlboro Track Becomes County Champs.",
+        "description": "The girls concluded their track season on a high note by clinching the county championship title in 2009, marking a triumphant end to their hard work, determination, and teamwork throughout the year.",
+        "img": "timeline-imgs/county-champs.png",
+        "date": "05/2009",
+        "alt": "Adaobi Unachukwu running"
+    },
     {
-        "title": "Mustangs Host First Night Game",
+        "title": "Mustangs Host First Night Game.",
         "description": "For the first time in school history, Marlboro High School hosted a football game under the lights. Without permanent stadium lighting, the school went all in, renting ten towering construction lights to surround the field and turn night into day.",
         "img": "timeline-imgs/night-game.JPG",
         "date": "10/2011",
         "alt": "Picture of first night game"
     },
     {
-        "title": "Mustangs Stampede Into Playoffs",
+        "title": "Mustangs Stampede Into Playoffs.",
         "description": "Marlboro defeats Washington Township 21-17 to advance to the second round of the NJSIAA Group 5 playoffs.  It was the first time Marlboro had qualified for the playoffs since 1999, and the first playoff victory since 1994.",
         "img": "timeline-imgs/football-2022.jpg",
         "date": "10/2022",
         "alt": "Picture of number 7 Ryan Mendes with football"
     },
     {
-        "title": "History Made in Marlboro",
+        "title": "History Made in Marlboro.",
         "description": "Marlboro defeats South Brunswick 26-16 to advance to the second round of the NJSIAA Group 5 playoffs.  Marlboro made the playoffs in back to back seasons for the first time in school history.  The team would advance to the NJSIAA South Jersey Group 5 Sectional 5 where they would lose in double overtime.",
         "img": "timeline-imgs/football-2023.jpg",
         "date": "10/2023",
         "alt": "Picture of number 22 Matt Cassidy with Marlboro football coach Jason Dagato"
-    },
-    {
-        "title": "title",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias adipisci ipsa expedita nihil cum culpa!",
-        "img": "https://picsum.photos/300/300",
-        "date": "mm/yyyy",
-        "alt": "lorem"
     }
 ]
