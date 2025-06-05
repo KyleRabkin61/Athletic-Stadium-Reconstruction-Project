@@ -282,7 +282,7 @@ body {
 
 .the-project {
   background: #F5F5F5;
-  height: 1300px;
+  height: 1400px;
 }
 
 .the-project-title {
@@ -335,7 +335,7 @@ body {
 
 .the-funding {
   background: #113F75;
-  height: 1300px;
+  height: 1400px;
 }
 
 .the-funding-title {
@@ -363,7 +363,7 @@ body {
 .the-funding-image {
   width: 80%;
   height: 500px;
-  background-image: url(athletic-stadium-imgs/before.JPG);
+  background-image: url(athletic-stadium-imgs/side-angle.JPG);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -651,9 +651,11 @@ ul li .date {
 .testimonial {
   position: relative;
   max-width: 900px;
+  height: 700px;
   width: 100%;
   padding: 30px 0;
   background: white;
+  border-radius: 20px;
   box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.984);
 }
 
@@ -671,7 +673,7 @@ ul li .date {
 
 .slide p {
   padding: 0 160px;
-  font-size: clamp(12px, 2vw, 14px);
+  font-size: clamp(13px, 2vw, 16px);
   font-weight: 400;
   color: black;
   font-family: "Instrument Sans", sans-serif;
@@ -950,7 +952,7 @@ footer .footer-icon {
   }
 
   .the-meaning-title {
-    margin-bottom: 70px;
+    margin-bottom: 20px;
   }
 
   .the-result {
